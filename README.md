@@ -52,3 +52,35 @@ This exercise covers the following fundamentals:
 5. Overflow.
 6. Using a simple form
 
+
+EXPLICACIÓN DE CÓMO HICE EL EJERCICIO:
+
+·HTML:
+Dividí el contenido de la postal en varios divs.
+En el head, puse el link de google fonts para poder cambair el estilo de la letra.
+
+Uno general que abarca toda la postal, para poder separarla del resto del body, que es el de la class "postcard".
+
+Luego dividí el contenido de ese div en las tres partes de la postal (header, body y footer).
+
+-postcard-header: dentro puse el título de la postal y el logo.
+
+-postcard-body: volví a dividir este div en dos divs distintos, uno para la parte izquierda del contenido del body, y otro para la parte derecha; para poder luego en CSS referirme a todo el contenido de cada uno. 
+
+-postcard-footer: en este div va el botón.
+
+
+·CSS:
+Empecé poniendo el fondo del body en negro, luego me referí a el div general (.postcard) y le puse el fondo blanco, ajusté el tamaño con el width y heigth, luego usé margin:auto para que se centrara horizontalmente, y el margin-top para centrarla verticalmente. Después cambié el tipo de fuente y el tamaño con font-size.
+
+-header: usé display:flex para que el contenido se colocara uno al lado del otro, luego le di margen de los lados y quité en margen inferior para que el texto del body estuviera más cerca.
+Luego ajusté el tamaño del logo y le di margen de arriba. Y con el <h1> lo que hice fue ajustarlo con el margen de arriba, amplié el tamaño de las letras y le puse margen derecho para mover el logo.
+
+-body: igual que en header, usé display:flex y usé los márgenes y el padding para ajustar el body left y right y que se vieran como en la postal del ejemplo. Y lo mismo hice con el input del body right.
+
+-footer: le dejé solo el borde del final y puse el color y el padding para que fuera lo más parecido al ejemplo.
+
+
+
+
+
